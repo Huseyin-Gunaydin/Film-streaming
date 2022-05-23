@@ -111,15 +111,17 @@ section div .btn {
   flex: 1 1 1rem;
   align-items: center;
   flex-direction: column;
-  margin: 10px 20px;
+  margin: 40px 20px;
   background-color: rgb(84, 159, 230);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
   align-self: normal;
+  transition: transform .8s;
 }
 .card img,
 .card2 img {
   max-width: 200px;
+
 }
 .card h3,
 .card2 h3 {
@@ -141,6 +143,14 @@ section div .btn {
   padding: 10px 20px;
   border-radius: 10px;
 }
+
+ .card:hover,
+ .card2:hover{
+   transform: scale(1.2);
+ }
+
+
+
 
 @media (max-width: 858px) {
   .checkbtn {
