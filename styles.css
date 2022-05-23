@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #286baf;
+}
+header {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+
+header ul {
+  float: right;
+  margin-right: 20px;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 80px;
+}
+header ul li a {
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+header ul li a:hover {
+  background-color: #1b9bff;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.card a,
+.card2 a {
+  display: none;
+}
+
+section div {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-self: normal;
+}
+
+section img {
+  max-width: 100%;
+}
+section div .btn {
+  display: inline-block;
+  background: #0082e6;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin-bottom: 40px;
+}
+.btn:hover {
+  background-color: #1b9bff;
+  transition: 0.5s;
+}
+.card .btn:hover,
+.card2 .btn:hover {
+  background-color: #1b9bff;
+  transition: 0.5s;
+}
+
+.container,
+.container2 {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.row,
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card,
+.card2 {
+  display: flex;
+  flex: 1 1 1rem;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+  background-color: rgb(84, 159, 230);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  align-self: normal;
+}
+.card img,
+.card2 img {
+  max-width: 200px;
+}
+.card h3,
+.card2 h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+.card p,
+.card2 p {
+  margin-bottom: 10px;
+}
+.card .btn,
+.card2 .btn {
+  display: inline-block;
+  margin-top: auto;
+  background: #0082e6;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    background-color: #165089;
+    top: 80px;
+    left: 0px;
+    text-align: center;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  header ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header ul li a {
+    font-size: 20px;
+  }
+  header ul li a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
