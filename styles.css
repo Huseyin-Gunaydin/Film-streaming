@@ -37,6 +37,9 @@ header ul li a {
 header ul li a:hover {
   background-color: #1b9bff;
   transition: 0.5s;
+  border-radius: 20px;
+  transition: all .7s;
+
 }
 .checkbtn {
   font-size: 30px;
@@ -59,10 +62,8 @@ header ul li a:hover {
   opacity: 0.6 !important;
   color: #061e38;
   background-color: #fff;
+  transition: all .7s;
 }
-
-
-
 
 
 
@@ -148,6 +149,8 @@ section div .btn {
 .card p,
 .card2 p {
   margin-bottom: 10px;
+  color: rgb(18, 17, 17);
+
 }
 .card .btn,
 .card2 .btn {
